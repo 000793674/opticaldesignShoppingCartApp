@@ -1,0 +1,57 @@
+<!-- 
+	Peter Babb 000793674
+	12/06/2019
+
+    This page allows registered users to log in to the store. This page submits the login form
+    to login.php.
+    
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Optical Design of Stratford</title>
+	<link rel="stylesheet" type="text/css" href="css/opticaldesign.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+	<!-- / -->
+</head>
+<body>
+    <div class="navLinks">
+        <nav>
+            <a href = "register.html" class = "link">REGISTER</a>&#160;&#8226;&#160;
+            <a href = "login.html" class = "current">LOG&#160;IN</a>&#160;&#8226;&#160;
+            <a href = "index.php" class = "link">HOME</a>&#160;&#8226;&#160;
+            <a href = "about.php" class = "link">ABOUT&#160;US</a>&#160;&#8226;&#160;
+            <a href="frames/index.php"  class="link">OUR&#160;FRAMES</a>&#160;&#8226;&#160;
+            <a href="contacts/index.php"  class="link">CONTACT&#160;LENSES</a>&#160;&#8226;&#160;
+            <a href="contact.php" class = "link">CONTACT&#160;US</a>&#160;&#160;&#160;&#160;&#160;
+        </nav>
+    
+    </div>
+   
+        <div class = "forms">
+        <form action = "server/login.php" method = "POST">
+            
+            <div>
+                <label for = email2>E-mail: </label><br>
+                <input type = "email" name = "email2" placeholder = "email@email.com" required>
+            </div>
+            <div>
+                <label for = password2>Password: </label><br>
+                <input type="password" name = "password2" value= "" required>
+            </div>
+            <div>
+                <input type = "submit" value = "LOG IN" class = "button">
+            </div>
+            <p>Don't have an account?<br><a href = "server/register.php" class ="link">Register Here!</a></p>
+        </form>
+        
+    </div>
+    
+</body>
+</html>

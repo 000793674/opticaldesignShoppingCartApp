@@ -1,0 +1,76 @@
+<!-- 
+	Peter Babb 000793674
+	12/06/2019
+
+    This page allows users to register an account with the store.
+    This input from this page is handled by register.js and register.php
+    
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Optical Design of Stratford</title>
+    <link rel="stylesheet" type="text/css" href="css/opticaldesign.css" />
+    <script src = "js/register.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+	<!-- / -->
+</head>
+<body>
+    <div class="navLinks">
+        <nav>
+            <a href = "register.html" class = "current">REGISTER</a>&#160;&#8226;&#160;
+            <a href = "login.html" class = "link">LOG&#160;IN</a>&#160;&#8226;&#160;
+            <a href = "index.php" class = "link">HOME</a>&#160;&#8226;&#160;
+            <a href = "about.php" class = "link">ABOUT&#160;US</a>&#160;&#8226;&#160;
+            <a href="frames/index.php"  class="link">OUR&#160;FRAMES</a>&#160;&#8226;&#160;
+            <a href="contacts/index.php"  class="link">CONTACT&#160;LENSES</a>&#160;&#8226;&#160;
+            <a href="contact.php" class = "link">CONTACT&#160;US</a>&#160;&#160;&#160;&#160;&#160;
+        </nav>
+    
+    </div>
+    <div class = forms>
+        <form id = "registrationForm" action = "register.php" method = "POST">
+            <label class = error>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</label><br>
+            <label for = "First_Name">First Name: </label><br>
+            <label id = "First_NameError" class = "error"></label>
+            <input name = "First_Name" type = "text" required><br>
+            
+
+            <label for = "Last_Name">Last Name: </label><br>
+            <label id = "Last_NameError" class = "error"></label>
+            <input name="Last_Name" type = "text" required><br>
+
+            <label for = "Address">Street Address: </label><br>
+            <label id = "AddressError" class = "error"></label>
+            <input name="Address" type = "text" placeholder = "123 street name" required><br>
+
+            <label for = "Postal_Code">Postal Code: </label><br>
+            <label id = "Postal_CodeError" class = "error"></label>
+            <input name = "Postal_Code" type = "text" placeholder = "A1A1A1" maxlength = 6 required><br>
+
+            <label for = "Credit_Card">Credit Card#: </label><br>
+            <label id = "Credit_CardError" class = "error"></label>
+            <input name = "Credit_Card" type = "text" placeholder = "XXXXXXXXXXXXXXXX" maxlength = 16><br>
+            <br>
+
+            <label for = "E-mail">Email Address: </label><br>
+            <label id = "E-mailError" class = "error"></label>
+            <input name="E-mail" type = "email" required><br>
+
+            <label for = "Password">Password: </label><br>
+            <label id = "PasswordError" class = "error"></label>
+            <input name="Password" type = "password" required><br>
+
+            <input type = "submit" value = "REGISTER" id = "register" class = "button">
+            <label class = "error" name = "status"></label>
+        </form>
+    </div>
+</body>
+</html>
